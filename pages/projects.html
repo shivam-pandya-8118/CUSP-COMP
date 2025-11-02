@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projects - Computer Engineering</title>
+    <link
+      rel="shortcut icon"
+      href="../assets/images/FavIcon.svg"
+      type="image/x-icon"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <style>
+      .table-sortable th {
+        cursor: pointer;
+        user-select: none;
+        position: relative;
+      }
+      .table-sortable th:hover {
+        background-color: rgba(255, 255, 255, 0.1);
+      }
+      .table-sortable th::after {
+        content: "\f0dc";
+        font-family: "Font Awesome 6 Free";
+        font-weight: 900;
+        margin-left: 8px;
+        opacity: 0.3;
+        font-size: 0.8em;
+      }
+      .table-sortable th.asc::after {
+        content: "\f0de";
+        opacity: 1;
+      }
+      .table-sortable th.desc::after {
+        content: "\f0dd";
+        opacity: 1;
+      }
+      .no-data-row {
+        background-color: #f8d7da;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="../index.html">
+          <i class="fas fa-graduation-cap"></i> CE Dept
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html"
+                ><i class="fas fa-home"></i> Home</a
+              >
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle active"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+              >
+                <i class="fas fa-user-graduate"></i> Student Corner
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="https://gtu.ac.in/syllabus/syllabus.aspx"
+                    target="_blank"
+                  >
+                    <i class="fas fa-book"></i> Syllabus</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="study-material.html">
+                    <i class="fas fa-file-alt"></i> Study Material</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item active" href="projects.html">
+                    <i class="fas fa-project-diagram"></i> Projects</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="ssip-activity.html">
+                    <i class="fas fa-lightbulb"></i> SSIP Activities</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="notice-board.html"
+                ><i class="fas fa-bullhorn"></i> E-Notice Board</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="faculty-profile.html"
+                ><i class="fas fa-chalkboard-teacher"></i> Faculty Profile</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="newsletter.html"
+                ><i class="fas fa-newspaper"></i> E-Newsletter</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="gallery.html"
+                ><i class="fas fa-images"></i> Gallery</a
+              >
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+              >
+                <i class="fas fa-comment-dots"></i> Feedback
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="feedback-student.html">
+                    <i class="fas fa-user-edit"></i> Student Feedback Form</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="feedback-course.html">
+                    <i class="fas fa-poll"></i> Course Exit Survey</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="feedback-program.html">
+                    <i class="fas fa-chart-line"></i> Program Exit Survey</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="https://docs.google.com/forms/d/e/1FAIpQLSe3RdRusA8OwbL_0vr_czWSHJMqL7JC14vapRi9b_g0xL2qkQ/viewform"
+                    target="_blank"
+                  >
+                    <i class="fas fa-user-plus"></i> Alumni Registration</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="coding-club.html"
+                ><i class="fas fa-code"></i> Coding Club</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html"
+                ><i class="fas fa-envelope"></i> Contact Us</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Page Header -->
+    <div class="hero-section text-center text-white py-5">
+      <div class="container">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb justify-content-center">
+            <li class="breadcrumb-item">
+              <a href="../index.html" class="text-white">Home</a>
+            </li>
+            <li class="breadcrumb-item">
+              <a href="#" class="text-white">Student Corner</a>
+            </li>
+            <li class="breadcrumb-item active" aria-current="page">Projects</li>
+          </ol>
+        </nav>
+        <h1 class="display-4">
+          <i class="fas fa-project-diagram"></i> Student Projects
+        </h1>
+        <p class="lead">Showcase of innovative student projects</p>
+      </div>
+    </div>
+
+    <!-- Projects Content -->
+    <div class="container my-5">
+      <div class="card shadow">
+        <div class="card-header bg-primary text-white">
+          <h4 class="mb-0"><i class="fas fa-table"></i> Projects Database</h4>
+        </div>
+        <div class="card-body">
+          <!-- Filter and Search Controls -->
+          <div class="row mb-3">
+            <div class="col-md-6 mb-2">
+              <div class="input-group">
+                <span class="input-group-text">
+                  <i class="fas fa-search"></i>
+                </span>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="tableSearch"
+                  placeholder="Search projects..."
+                />
+              </div>
+            </div>
+            <div class="col-md-3 mb-2">
+              <select class="form-select" id="yearFilter">
+                <option value="">All Years</option>
+                <option value="2018">2018</option>
+                <option value="2019">2019</option>
+                <option value="2020">2020</option>
+                <option value="2021">2021</option>
+                <option value="2022">2022</option>
+              </select>
+            </div>
+            <div class="col-md-3 mb-2">
+              <select class="form-select" id="entriesPerPage">
+                <option value="10">Show 10 entries</option>
+                <option value="25">Show 25 entries</option>
+                <option value="50">Show 50 entries</option>
+                <option value="100">Show 100 entries</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Projects Table -->
+          <div class="table-responsive">
+            <table
+              class="table table-striped table-bordered"
+              id="projectsTable"
+            >
+              <thead class="table-dark">
+                <tr>
+                  <th>#</th>
+                  <th>Year</th>
+                  <th>Project Coordinators</th>
+                  <th>Group ID</th>
+                  <th>En. No.</th>
+                  <th style="text-transform: uppercase">Student Name</th>
+                  <th>Project Title</th>
+                  <th style="text-transform: uppercase">Guide</th>
+                </tr>
+              </thead>
+              <tbody id="tableBody"></tbody>
+            </table>
+          </div>
+
+          <!-- Pagination -->
+          <nav aria-label="Projects pagination">
+            <ul class="pagination justify-content-center" id="pagination"></ul>
+          </nav>
+
+          <!-- Table Info -->
+          <div class="text-center text-muted">
+            <small id="tableInfo">Showing 1 to 10 of 10 entries</small>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project Stats -->
+      <div class="row mt-4">
+        <div class="col-md-4">
+          <div class="card text-center bg-primary text-white">
+            <div class="card-body">
+              <i class="fas fa-project-diagram fa-3x mb-2"></i>
+              <h3>56</h3>
+              <p class="mb-0">Total Projects</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card text-center bg-success text-white">
+            <div class="card-body">
+              <i class="fas fa-award fa-3x mb-2"></i>
+              <h3>5</h3>
+              <p class="mb-0">Award Winning</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card text-center bg-info text-white">
+            <div class="card-body">
+              <i class="fas fa-users fa-3x mb-2"></i>
+              <h3>343</h3>
+              <p class="mb-0">Students Involved</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4 mt-5">
+      <div class="container">
+        <div class="text-center">
+          <p class="mb-0 small">
+            &copy; 2025 MIT License | Designed & Developed by
+            <a
+              href="#"
+              class="text-warning"
+              data-bs-toggle="modal"
+              data-bs-target="#developerModal"
+            >
+              Shivam M. Pandya
+            </a>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Developer Modal -->
+    <div class="modal fade" id="developerModal" tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header bg-primary text-white">
+            <h5 class="modal-title">
+              <i class="fas fa-user-tie"></i> Developer Information
+            </h5>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+          <div class="modal-body text-center">
+            <div class="mb-3">
+              <img
+                src="../assets/images/Shivam_Pandya.png"
+                alt="Developer"
+                class="img-fluid rounded-circle border border-3 border-primary"
+                style="max-width: 200px"
+              />
+            </div>
+            <h4 class="text-primary">Thanks For Visiting!</h4>
+            <h5 class="mt-3">Shivam M. Pandya</h5>
+            <p class="text-muted">[246090307077]</p>
+            <p class="mb-0">
+              Student, Diploma in Computer Engineering Department
+            </p>
+            <p class="text-muted">
+              C. U Shah Govt. Polytechnic - Surendranagar
+            </p>
+            <div class="mt-3">
+              <span class="badge bg-success me-1">HTML</span>
+              <span class="badge bg-info me-1">CSS</span>
+              <span class="badge bg-warning me-1">JavaScript</span>
+              <span class="badge bg-primary me-1">Bootstrap</span>
+              <span class="badge bg-danger">jQuery</span>
+              <span class="badge bg-dark">Google Script</span>
+              <span class="badge bg-secondary">Google Sheets</span>
+            </div>
+            <div class="mt-3">
+              <a
+                href="https://shivampandya.framer.website"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn btn-outline-primary btn-sm"
+              >
+                <i class="fas fa-globe"></i> Visit Portfolio
+              </a>
+            </div>
+          </div>
+          <div class="modal-footer justify-content-center">
+            <p class="text-muted small mb-0">
+              <i class="fas fa-copyright"></i> 2025 MIT License | RWPD
+              Submission Website
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <button id="scrollTop" class="btn btn-primary rounded-circle">
+      <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="../assets/js/cusp_projects_db.js"></script>
+    <script src="../assets/js/script.js"></script>
+
+    <script>
+      // Projects Table Functionality
+      (function () {
+        let currentPage = 1;
+        let entriesPerPage = 10;
+        let allRows = [];
+        let filteredRows = [];
+        let sortColumn = -1;
+        let sortDirection = "asc";
+
+        // Initialize
+        document.addEventListener("DOMContentLoaded", function () {
+          const tableBody = document.getElementById("tableBody");
+          allRows = Array.from(tableBody.querySelectorAll("tr"));
+          filteredRows = [...allRows];
+
+          // Setup event listeners
+          document
+            .getElementById("tableSearch")
+            .addEventListener("keyup", handleSearch);
+          document
+            .getElementById("yearFilter")
+            .addEventListener("change", handleFilter);
+          document
+            .getElementById("entriesPerPage")
+            .addEventListener("change", handleEntriesChange);
+
+          // Setup sorting
+          document
+            .querySelectorAll(".table-sortable th")
+            .forEach((th, index) => {
+              th.addEventListener("click", () => handleSort(index));
+            });
+
+          // Initial render
+          renderTable();
+        });
+
+        // Handle search
+        function handleSearch() {
+          const searchTerm = document
+            .getElementById("tableSearch")
+            .value.toLowerCase();
+          const yearFilter = document.getElementById("yearFilter").value;
+
+          filteredRows = allRows.filter((row) => {
+            const text = row.textContent.toLowerCase();
+            const yearMatch =
+              !yearFilter || row.cells[1].textContent === yearFilter;
+            const searchMatch = !searchTerm || text.includes(searchTerm);
+            return yearMatch && searchMatch;
+          });
+
+          currentPage = 1;
+          renderTable();
+        }
+
+        // Handle filter
+        function handleFilter() {
+          handleSearch();
+        }
+
+        // Handle entries per page change
+        function handleEntriesChange() {
+          entriesPerPage = parseInt(
+            document.getElementById("entriesPerPage").value
+          );
+          currentPage = 1;
+          renderTable();
+        }
+
+        // Handle sorting
+        function handleSort(columnIndex) {
+          const headers = document.querySelectorAll(".table-sortable th");
+          const clickedHeader = headers[columnIndex];
+
+          // Remove sorting classes from all headers
+          headers.forEach((h) => {
+            h.classList.remove("asc", "desc");
+          });
+
+          // Toggle sort direction
+          if (sortColumn === columnIndex) {
+            sortDirection = sortDirection === "asc" ? "desc" : "asc";
+          } else {
+            sortDirection = "asc";
+            sortColumn = columnIndex;
+          }
+
+          // Add sorting class
+          clickedHeader.classList.add(sortDirection);
+
+          // Sort the filtered rows
+          const sortType = clickedHeader.getAttribute("data-sort");
+
+          filteredRows.sort((a, b) => {
+            let aVal = a.cells[columnIndex].textContent.trim();
+            let bVal = b.cells[columnIndex].textContent.trim();
+
+            if (sortType === "number") {
+              aVal = parseFloat(aVal) || 0;
+              bVal = parseFloat(bVal) || 0;
+            }
+
+            if (sortDirection === "asc") {
+              return aVal > bVal ? 1 : aVal < bVal ? -1 : 0;
+            } else {
+              return aVal < bVal ? 1 : aVal > bVal ? -1 : 0;
+            }
+          });
+
+          currentPage = 1;
+          renderTable();
+        }
+
+        // Render table
+        function renderTable() {
+          const tableBody = document.getElementById("tableBody");
+          const totalEntries = filteredRows.length;
+
+          // Clear table
+          tableBody.innerHTML = "";
+
+          if (totalEntries === 0) {
+            // Show no data message
+            const noDataRow = document.createElement("tr");
+            noDataRow.className = "no-data-row";
+            noDataRow.innerHTML = `
+              <td colspan="9" class="text-center">
+                <div class="alert alert-danger mb-0" role="alert">
+                  <i class="fas fa-exclamation-triangle"></i>
+                  <strong>No Data Found!</strong> No records match your search criteria.
+                </div>
+              </td>
+            `;
+            tableBody.appendChild(noDataRow);
+
+            // Update info
+            document.getElementById("tableInfo").textContent =
+              "Showing 0 to 0 of 0 entries";
+            document.getElementById("pagination").innerHTML = "";
+            return;
+          }
+
+          // Calculate pagination
+          const startIndex = (currentPage - 1) * entriesPerPage;
+          const endIndex = Math.min(startIndex + entriesPerPage, totalEntries);
+          const totalPages = Math.ceil(totalEntries / entriesPerPage);
+
+          // Display rows for current page
+          for (let i = startIndex; i < endIndex; i++) {
+            tableBody.appendChild(filteredRows[i].cloneNode(true));
+          }
+
+          // Update info
+          document.getElementById("tableInfo").textContent = `Showing ${
+            startIndex + 1
+          } to ${endIndex} of ${totalEntries} entries`;
+
+          // Render pagination
+          renderPagination(totalPages);
+        }
+
+        // Render pagination
+        function renderPagination(totalPages) {
+          const pagination = document.getElementById("pagination");
+          pagination.innerHTML = "";
+
+          if (totalPages <= 1) return;
+
+          // Previous button
+          const prevLi = document.createElement("li");
+          prevLi.className = `page-item ${currentPage === 1 ? "disabled" : ""}`;
+          prevLi.innerHTML = `
+            <a class="page-link" href="#" tabindex="-1">
+              <i class="fas fa-chevron-left"></i>
+            </a>
+          `;
+          prevLi.addEventListener("click", (e) => {
+            e.preventDefault();
+            if (currentPage > 1) {
+              currentPage--;
+              renderTable();
+            }
+          });
+          pagination.appendChild(prevLi);
+
+          // Page numbers
+          let startPage = Math.max(1, currentPage - 2);
+          let endPage = Math.min(totalPages, currentPage + 2);
+
+          if (startPage > 1) {
+            const firstLi = document.createElement("li");
+            firstLi.className = "page-item";
+            firstLi.innerHTML = `<a class="page-link" href="#">1</a>`;
+            firstLi.addEventListener("click", (e) => {
+              e.preventDefault();
+              currentPage = 1;
+              renderTable();
+            });
+            pagination.appendChild(firstLi);
+
+            if (startPage > 2) {
+              const dotsLi = document.createElement("li");
+              dotsLi.className = "page-item disabled";
+              dotsLi.innerHTML = `<a class="page-link" href="#">...</a>`;
+              pagination.appendChild(dotsLi);
+            }
+          }
+
+          for (let i = startPage; i <= endPage; i++) {
+            const pageLi = document.createElement("li");
+            pageLi.className = `page-item ${i === currentPage ? "active" : ""}`;
+            pageLi.innerHTML = `<a class="page-link" href="#">${i}</a>`;
+            pageLi.addEventListener("click", (e) => {
+              e.preventDefault();
+              currentPage = i;
+              renderTable();
+            });
+            pagination.appendChild(pageLi);
+          }
+
+          if (endPage < totalPages) {
+            if (endPage < totalPages - 1) {
+              const dotsLi = document.createElement("li");
+              dotsLi.className = "page-item disabled";
+              dotsLi.innerHTML = `<a class="page-link" href="#">...</a>`;
+              pagination.appendChild(dotsLi);
+            }
+
+            const lastLi = document.createElement("li");
+            lastLi.className = "page-item";
+            lastLi.innerHTML = `<a class="page-link" href="#">${totalPages}</a>`;
+            lastLi.addEventListener("click", (e) => {
+              e.preventDefault();
+              currentPage = totalPages;
+              renderTable();
+            });
+            pagination.appendChild(lastLi);
+          }
+
+          // Next button
+          const nextLi = document.createElement("li");
+          nextLi.className = `page-item ${
+            currentPage === totalPages ? "disabled" : ""
+          }`;
+          nextLi.innerHTML = `
+            <a class="page-link" href="#">
+              <i class="fas fa-chevron-right"></i>
+            </a>
+          `;
+          nextLi.addEventListener("click", (e) => {
+            e.preventDefault();
+            if (currentPage < totalPages) {
+              currentPage++;
+              renderTable();
+            }
+          });
+          pagination.appendChild(nextLi);
+        }
+      })();
+    </script>
+  </body>
+</html>

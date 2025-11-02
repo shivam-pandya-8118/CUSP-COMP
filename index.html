@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Computer Engineering - C. U. Shah Govt. Polytechnic</title>
+    <link
+      rel="shortcut icon"
+      href="./assets/images/FavIcon.svg"
+      type="image/x-icon"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+          <i class="fas fa-graduation-cap"></i> CE Dept
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="index.html"
+                ><i class="fas fa-home"></i> Home</a
+              >
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+              >
+                <i class="fas fa-user-graduate"></i> Student Corner
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="https://gtu.ac.in/syllabus/syllabus.aspx"
+                    target="_blank"
+                  >
+                    <i class="fas fa-book"></i> Syllabus</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="./pages/study-material.html">
+                    <i class="fas fa-file-alt"></i> Study Material</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="./pages/projects.html">
+                    <i class="fas fa-project-diagram"></i> Projects</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="./pages/ssip-activity.html">
+                    <i class="fas fa-lightbulb"></i> SSIP Activities</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./pages/notice-board.html"
+                ><i class="fas fa-bullhorn"></i> E-Notice Board</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./pages/faculty-profile.html"
+                ><i class="fas fa-chalkboard-teacher"></i> Faculty Profile</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./pages/newsletter.html"
+                ><i class="fas fa-newspaper"></i> E-Newsletter</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./pages/gallery.html"
+                ><i class="fas fa-images"></i> Gallery</a
+              >
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+              >
+                <i class="fas fa-comment-dots"></i> Feedback
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="./pages/feedback-student.html">
+                    <i class="fas fa-user-edit"></i> Student Feedback Form</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="./pages/feedback-course.html">
+                    <i class="fas fa-poll"></i> Course Exit Survey</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="./pages/feedback-program.html">
+                    <i class="fas fa-chart-line"></i> Program Exit Survey</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="https://docs.google.com/forms/d/e/1FAIpQLSe3RdRusA8OwbL_0vr_czWSHJMqL7JC14vapRi9b_g0xL2qkQ/viewform"
+                    target="_blank"
+                  >
+                    <i class="fas fa-user-plus"></i> Alumni Registration</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./pages/coding-club.html"
+                ><i class="fas fa-code"></i> Coding Club</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./pages/contact.html"
+                ><i class="fas fa-envelope"></i> Contact Us</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section with Breadcrumb -->
+    <div class="hero-section text-center text-white py-5">
+      <div class="container">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb justify-content-center">
+            <li class="breadcrumb-item active" aria-current="page">Home</li>
+          </ol>
+        </nav>
+        <h1 class="display-4 fw-bold mb-3">
+          C. U. Shah Govt. Polytechnic Surendranagar
+        </h1>
+        <p class="lead mb-2">
+          <span class="badge bg-success me-2">GTU Affiliated</span>
+          <span class="badge bg-info">AICTE Approved</span>
+        </p>
+        <h2 class="h3 mt-4">Department of Diploma in Computer Engineering</h2>
+        <div class="mt-3">
+          <button
+            class="btn btn-light btn-lg"
+            data-bs-toggle="modal"
+            data-bs-target="#tourModal"
+          >
+            <i class="fas fa-play-circle"></i> Department Tour
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Progress Bar for Page Load -->
+    <div class="progress" style="height: 3px">
+      <div
+        class="progress-bar progress-bar-striped progress-bar-animated"
+        role="progressbar"
+        style="width: 100%"
+        id="loadProgress"
+      ></div>
+    </div>
+
+    <!-- Institute Information -->
+    <div class="container my-5">
+      <div class="row">
+        <!-- Institute Section -->
+        <div class="col-lg-6 mb-4">
+          <div class="card h-100 shadow-sm hover-lift">
+            <div class="card-header bg-primary text-white">
+              <h3 class="card-title mb-0">
+                <i class="fas fa-university"></i> C. U. Shah Govt. Polytechnic
+              </h3>
+            </div>
+            <div class="card-body">
+              <div class="text-center mb-3">
+                <img
+                  src="./assets/images/CUSP.png"
+                  alt="Institute Logo"
+                  class="rounded img-fluid"
+                  style="max-width: 150px"
+                />
+              </div>
+              <h5 class="text-primary">Introduction</h5>
+              <p class="card-text" style="text-align: justify">
+                &ensp;&ensp;&ensp;&ensp;&ensp;&ensp; Established in June 1984,
+                C. U. Shah Government Polytechnic, Wadhwan City, is a premier
+                institute offering quality education, research, and training in
+                engineering and technology. Named after Sheth Shri C. U. Shah,
+                it is affiliated with Gujarat Technological University (GTU),
+                Ahmedabad, and governed by the Department of Technical
+                Education, Gujarat State, Gandhinagar. The well-planned campus
+                is located near GIDC and Boda Talav, providing state-of-the-art
+                facilities such as departmental buildings, administrative
+                offices, hostels, and residential quarters for staff. The
+                institute focuses on developing skilled engineers through strong
+                academics and practical exposure to meet the evolving demands of
+                the industry.
+              </p>
+
+              <div class="accordion" id="instituteAccordion">
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#instituteVision"
+                    >
+                      <i class="fas fa-eye me-2"></i> Institute Vision
+                    </button>
+                  </h2>
+                  <div
+                    id="instituteVision"
+                    class="accordion-collapse collapse show"
+                    data-bs-parent="#instituteAccordion"
+                  >
+                    <div class="accordion-body">
+                      Produce competent diploma engineers for the society.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#instituteMission"
+                    >
+                      <i class="fas fa-bullseye me-2"></i> Institute Mission
+                    </button>
+                  </h2>
+                  <div
+                    id="instituteMission"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#instituteAccordion"
+                  >
+                    <div class="accordion-body">
+                      <ul class="list-group list-group-flush">
+                        <li class="list-group-item">
+                          Impart technical knowledge and skills.
+                        </li>
+                        <li class="list-group-item">
+                          Inculcate professional values and make them socially
+                          responsible.
+                        </li>
+                        <li class="list-group-item">
+                          Promote entrepreneurship and employability skills.
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Department Section -->
+        <div class="col-lg-6 mb-4">
+          <div class="card h-100 shadow-sm hover-lift">
+            <div class="card-header bg-success text-white">
+              <h3 class="card-title mb-0">
+                <i class="fas fa-laptop-code"></i> Department of Computer
+                Engineering
+              </h3>
+            </div>
+            <div class="card-body">
+              <div class="text-center mb-3">
+                <img
+                  src="./assets/images/COMP.jpg"
+                  alt="Department Logo"
+                  class="img-fluid rounded"
+                  style="max-width: 150px"
+                />
+              </div>
+              <h5 class="text-success">Introduction</h5>
+              <p class="card-text" style="text-align: justify">
+                &ensp;&ensp;&ensp;&ensp;&ensp;&ensp; The Computer Engineering
+                Department is Established in the year of 2001. In order to
+                achieve task as stated in mission statement, we use learning
+                tools like lecture-cum- discussion, laboratory work, tutorials,
+                home assignments, seminars, field visits and project work. The
+                department has well qualified faculty to cater the academic and
+                other kinds of students' needs to enforce mission and vision of
+                the department. Department possesses classrooms and prime
+                laboratories as per AICTE norms and standards. We offer
+                Interactive and effective learning environment to the students.
+              </p>
+
+              <div class="accordion" id="departmentAccordion">
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#deptVision"
+                    >
+                      <i class="fas fa-eye me-2"></i> Department Vision
+                    </button>
+                  </h2>
+                  <div
+                    id="deptVision"
+                    class="accordion-collapse collapse show"
+                    data-bs-parent="#departmentAccordion"
+                  >
+                    <div class="accordion-body">
+                      Produce competent diploma computer engineers for the
+                      society.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#deptMission"
+                    >
+                      <i class="fas fa-bullseye me-2"></i> Department Mission
+                    </button>
+                  </h2>
+                  <div
+                    id="deptMission"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#departmentAccordion"
+                  >
+                    <div class="accordion-body">
+                      <ul class="list-group list-group-flush">
+                        <li class="list-group-item">
+                          Provide outcome based quality education.
+                        </li>
+                        <li class="list-group-item">
+                          Inculcate soft skill and ethical values.
+                        </li>
+                        <li class="list-group-item">
+                          Motivate entrepreneurship and employability skills.
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#peo"
+                    >
+                      <i class="fas fa-graduation-cap me-2"></i> Program
+                      Educational Objectives
+                    </button>
+                  </h2>
+                  <div
+                    id="peo"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#departmentAccordion"
+                  >
+                    <div class="accordion-body">
+                      <ol class="list-group list-group-numbered">
+                        <li class="list-group-item">
+                          Students will be able to apply knowledge of basic
+                          science, mathematics and computer science in their
+                          professional field.
+                        </li>
+                        <li class="list-group-item">
+                          Students will be able to fulfil meets of software
+                          industry, understand technical specification, design
+                          and provide optimal solutions which are beneficial for
+                          society.
+                        </li>
+                        <li class="list-group-item">
+                          Students will practice the profession with ethics,
+                          morals and leadership to relate engineering to
+                          welfare.
+                        </li>
+                        <li class="list-group-item">
+                          Students will be able to adapt to the evolving
+                          technical challenges and changing career
+                          opportunities.
+                        </li>
+                      </ol>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Principal Message Section -->
+    <div class="container my-5">
+      <div class="card shadow-lg border-0">
+        <div class="card-header bg-gradient text-white text-center py-3">
+          <h3 class="mb-0 text-black">
+            <i class="fas fa-quote-left"></i> Message from Principal
+            <i class="fas fa-quote-right"></i>
+          </h3>
+        </div>
+        <div class="card-body">
+          <div class="row align-items-center">
+            <div class="col-md-4 text-center mb-3 mb-md-0">
+              <img
+                src="./assets/images/staff_images/GKM.png"
+                alt="HOD"
+                class="img-fluid rounded shadow hod-image"
+              />
+              <div class="mt-3">
+                <h5 class="mb-1 text-primary">Shree G. K. Makwana</h5>
+                <p class="text-muted mb-0"><em>I/C Principal</em></p>
+                <p class="text-muted">
+                  <small>C. U. Shah Government Polytechnic Surendranagar</small>
+                </p>
+              </div>
+            </div>
+            <div class="col-md-8">
+              <blockquote class="blockquote">
+                <p class="mb-3" style="text-align: justify">
+                  <i class="fas fa-quote-left text-primary me-2"></i>
+                  Welcome to C. U. Shah Government Polytechnic,
+                  <br /><br />
+                  Since our establishment in 1984, we have been dedicated to the
+                  mission of delivering top-tier education, fostering
+                  innovation, and providing hands-on training in various
+                  engineering and technology disciplines. As an institution
+                  affiliated with Gujarat Technological University and under the
+                  administration of the Department of Technical Education,
+                  Gujarat State, we hold ourselves to the highest standards of
+                  academic excellence and integrity.
+                  <br /><br />
+                  Our goal is not only to impart technical knowledge but also to
+                  nurture our students’ overall development, preparing them to
+                  excel in their professional careers and contribute positively
+                  to society. Our campus, with its modern facilities and vibrant
+                  learning environment, is designed to support this mission.
+                  <br /><br />
+                  I invite you to explore our website and learn more about the
+                  opportunities that await you at C. U. Shah Government
+                  Polytechnic. Together, we can achieve great things and build a
+                  brighter future for all.
+                  <i class="fas fa-quote-right text-primary ms-2"></i>
+                </p>
+              </blockquote>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- HOD Message Section -->
+    <div class="container my-5">
+      <div class="card shadow-lg border-0">
+        <div class="card-header bg-gradient text-white text-center py-3">
+          <h3 class="mb-0 text-black">
+            <i class="fas fa-quote-left"></i> Message from Head of Department
+            <i class="fas fa-quote-right"></i>
+          </h3>
+        </div>
+        <div class="card-body">
+          <div class="row align-items-center">
+            <div class="col-md-4 text-center mb-3 mb-md-0">
+              <img
+                src="./assets/images/staff_images/Krunalkumar_Patel.png"
+                alt="HOD"
+                class="img-fluid rounded shadow hod-image"
+              />
+              <div class="mt-3">
+                <h5 class="mb-1 text-primary">Shree Krunalkumar G. Patel</h5>
+                <p class="text-muted mb-0"><em>I/C Head of Department</em></p>
+                <p class="text-muted">
+                  <small>Diploma in Computer Engineering Department</small>
+                </p>
+              </div>
+            </div>
+            <div class="col-md-8">
+              <blockquote class="blockquote">
+                <p class="mb-3" style="text-align: justify">
+                  <i class="fas fa-quote-left text-primary me-2"></i>
+                  Dear Students and Visitors,
+                  <br /><br />
+                  Welcome to the Department of Diploma in Computer Engineering
+                  at C. U. Shah Government Polytechnic, Surendranagar. It gives
+                  me immense pleasure to address you through this platform and
+                  to serve as the head of such a dynamic department. Our
+                  department is committed to providing quality education,
+                  fostering an environment of innovation and research, and
+                  guiding students toward global competitiveness.
+                  <br /><br />
+                  We take pride in our team of highly experienced and motivated
+                  faculty members who are dedicated to nurturing young minds.
+                  Along with strong technical knowledge, we strive to instill in
+                  our students the professional skills and ethical values
+                  necessary to become responsible engineers and valuable
+                  contributors to society. The department also provides a
+                  platform for enhancing employability skills, ensuring our
+                  students are well-prepared for successful careers.
+                  <br /><br />
+                  I encourage all students to make the most of the opportunities
+                  available here, to stay curious and creative, and to pursue
+                  excellence in all their endeavors. Wishing you all the best in
+                  your academic and professional journey.
+                  <i class="fas fa-quote-right text-primary ms-2"></i>
+                </p>
+              </blockquote>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Department Tour Modal -->
+    <div class="modal fade" id="tourModal" tabindex="-1">
+      <div class="modal-dialog modal-xl modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">
+              <i class="fas fa-video"></i> Department Tour Video
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="ratio ratio-16x9">
+              <iframe
+                src="https://www.youtube.com/embed/q2werdIAQGA?si=McuWJqABgCjAEDmT"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4 mt-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <h5>
+              <i class="fas fa-university"></i> C. U. Shah Govt. Polytechnic
+            </h5>
+            <p class="mb-0">Department of Computer Engineering</p>
+            <p class="text-muted small">Excellence in Technical Education</p>
+          </div>
+          <div class="col-md-6 text-md-end">
+            <a
+              href="./pages/contact.html"
+              class="btn btn-sm btn-outline-light me-2"
+            >
+              <i class="fas fa-phone"></i> Contact
+            </a>
+            <a href="./pages/contact.html" class="btn btn-sm btn-outline-light">
+              <i class="fas fa-map-marker-alt"></i> Location
+            </a>
+          </div>
+        </div>
+        <hr class="bg-light" />
+        <div class="text-center">
+          <p class="mb-0 small">
+            &copy; 2025 MIT License | Designed & Developed by
+            <a
+              href="#"
+              class="text-warning"
+              data-bs-toggle="modal"
+              data-bs-target="#developerModal"
+            >
+              Shivam M. Pandya
+            </a>
+            | RWPD Submission Website
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Developer Modal -->
+    <div class="modal fade" id="developerModal" tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header bg-primary text-white">
+            <h5 class="modal-title">
+              <i class="fas fa-user-tie"></i> Developer Information
+            </h5>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+          <div class="modal-body text-center">
+            <div class="mb-3">
+              <img
+                src="./assets/images/Shivam_Pandya.png"
+                alt="Developer"
+                class="img-fluid rounded-circle border border-3 border-primary"
+                style="max-width: 200px"
+              />
+            </div>
+            <h4 class="text-primary">Thanks For Visiting!</h4>
+            <h5 class="mt-3">Shivam M. Pandya</h5>
+            <p class="text-muted">[246090307077]</p>
+            <p class="mb-0">
+              Student, Diploma in Computer Engineering Department
+            </p>
+            <p class="text-muted">
+              C. U Shah Govt. Polytechnic - Surendranagar
+            </p>
+            <div class="mt-3">
+              <span class="badge bg-success me-1">HTML</span>
+              <span class="badge bg-info me-1">CSS</span>
+              <span class="badge bg-warning me-1">JavaScript</span>
+              <span class="badge bg-primary me-1">Bootstrap</span>
+              <span class="badge bg-danger">jQuery</span>
+              <span class="badge bg-dark">Google Script</span>
+              <span class="badge bg-secondary">Google Sheets</span>
+            </div>
+            <div class="mt-3">
+              <a
+                href="https://shivampandya.framer.website"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn btn-outline-primary btn-sm"
+              >
+                <i class="fas fa-globe"></i> Visit Portfolio
+              </a>
+            </div>
+          </div>
+          <div class="modal-footer justify-content-center">
+            <p class="text-muted small mb-0">
+              <i class="fas fa-copyright"></i> 2025 MIT License | RWPD
+              Submission Website
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scroll to Top Button -->
+    <button
+      id="scrollTop"
+      class="btn btn-primary rounded-circle"
+      data-bs-toggle="tooltip"
+      title="Back to Top"
+    >
+      <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <!-- Custom JS -->
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-Newsletter - Computer Engineering</title>
+    <link
+      rel="shortcut icon"
+      href="../assets/images/FavIcon.svg"
+      type="image/x-icon"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="../index.html">
+          <i class="fas fa-graduation-cap"></i> CE Dept
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html"
+                ><i class="fas fa-home"></i> Home</a
+              >
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+              >
+                <i class="fas fa-user-graduate"></i> Student Corner
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="https://gtu.ac.in/syllabus/syllabus.aspx"
+                    target="_blank"
+                  >
+                    <i class="fas fa-book"></i> Syllabus</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="study-material.html">
+                    <i class="fas fa-file-alt"></i> Study Material</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="projects.html">
+                    <i class="fas fa-project-diagram"></i> Projects</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="ssip-activity.html">
+                    <i class="fas fa-lightbulb"></i> SSIP Activities</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="notice-board.html"
+                ><i class="fas fa-bullhorn"></i> E-Notice Board</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="faculty-profile.html"
+                ><i class="fas fa-chalkboard-teacher"></i> Faculty Profile</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="newsletter.html"
+                ><i class="fas fa-newspaper"></i> E-Newsletter</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="gallery.html"
+                ><i class="fas fa-images"></i> Gallery</a
+              >
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+              >
+                <i class="fas fa-comment-dots"></i> Feedback
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="feedback-student.html">
+                    <i class="fas fa-user-edit"></i> Student Feedback Form</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="feedback-course.html">
+                    <i class="fas fa-poll"></i> Course Exit Survey</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="feedback-program.html">
+                    <i class="fas fa-chart-line"></i> Program Exit Survey</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="https://docs.google.com/forms/d/e/1FAIpQLSe3RdRusA8OwbL_0vr_czWSHJMqL7JC14vapRi9b_g0xL2qkQ/viewform"
+                    target="_blank"
+                  >
+                    <i class="fas fa-user-plus"></i> Alumni Registration</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="coding-club.html"
+                ><i class="fas fa-code"></i> Coding Club</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html"
+                ><i class="fas fa-envelope"></i> Contact Us</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Page Header -->
+    <div class="hero-section text-center text-white py-5">
+      <div class="container">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb justify-content-center">
+            <li class="breadcrumb-item">
+              <a href="../index.html" class="text-white">Home</a>
+            </li>
+            <li class="breadcrumb-item active" aria-current="page">
+              E-Newsletter
+            </li>
+          </ol>
+        </nav>
+        <h1 class="display-4"><i class="fas fa-newspaper"></i> E-Newsletter</h1>
+        <p class="lead">BROADCAST - Department Newsletter</p>
+      </div>
+    </div>
+
+    <!-- Newsletter Content -->
+    <div class="container my-5">
+      <!-- About Newsletter -->
+      <div class="card shadow-lg mb-5">
+        <div class="card-header bg-gradient text-white text-center py-4">
+          <h2 class="mb-0">
+            <i class="fas fa-broadcast-tower"></i> NEWSLETTER – "BROADCAST"
+          </h2>
+        </div>
+        <div class="card-body p-4 p-md-5">
+          <div class="row align-items-center mb-4">
+            <div class="col-md-3 text-center mb-3 mb-md-0">
+              <i class="fas fa-newspaper fa-5x text-primary"></i>
+            </div>
+            <div class="col-md-9">
+              <p class="lead" style="text-align: justify">
+                The Computer Engineering Department at C.U. Shah Polytechnic
+                takes pride in its biannual newsletter, a platform that
+                encapsulates the achievements, creativity, and dynamic spirit of
+                our students and faculty. Initiated in
+                <strong>June 2019</strong>, the newsletter has been consistently
+                published twice a year—
+                <span class="badge bg-info">January</span> and
+                <span class="badge bg-warning text-dark">July</span>, offering
+                insights into the academic and extracurricular excellence of our
+                department. Since its 3rd volume (June 2020), the newsletter has
+                carried the title "BROADCAST", symbolizing its role in
+                disseminating knowledge, innovation, and inspiration. Each
+                edition showcases. "BROADCAST" is more than just a newsletter -
+                it's a reflection of our vibrant learning community. Stay
+                connected, stay inspired!
+              </p>
+            </div>
+          </div>
+
+          <h4 class="text-primary mt-4 mb-3">
+            <i class="fas fa-star"></i> Each edition showcases:
+          </h4>
+
+          <div class="row g-3">
+            <div class="col-md-6">
+              <div class="card h-100 border-success">
+                <div class="card-body">
+                  <h5 class="card-title text-success">
+                    📌 Student Achievements
+                  </h5>
+                  <p class="card-text">
+                    Recognizing outstanding performances in academics,
+                    competitions, and research.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="card h-100 border-primary">
+                <div class="card-body">
+                  <h5 class="card-title text-primary">
+                    📌 Co-curricular Activities
+                  </h5>
+                  <p class="card-text">
+                    Highlighting workshops, technical events, and industry
+                    interactions.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="card h-100 border-warning">
+                <div class="card-body">
+                  <h5 class="card-title text-warning">
+                    📌 Extra-curricular Activities
+                  </h5>
+                  <p class="card-text">
+                    Celebrating students' participation in sports, cultural
+                    fests, and social initiatives.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="card h-100 border-info">
+                <div class="card-body">
+                  <h5 class="card-title text-info">📌 Interesting Articles</h5>
+                  <p class="card-text">
+                    Featuring insightful write-ups, tech trends, and creative
+                    expressions from students and faculty.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="text-center mt-4">
+            <h5 class="text-primary">👉 Check out our all editions below:</h5>
+          </div>
+        </div>
+      </div>
+
+      <!-- Newsletter Editions Table -->
+      <div class="card shadow">
+        <div class="card-header bg-primary text-white">
+          <h4 class="mb-0">
+            <i class="fas fa-archive"></i> Newsletter Archive
+          </h4>
+        </div>
+        <div class="card-body">
+          <div class="table-responsive">
+            <table class="table table-striped table-bordered">
+              <thead class="table-dark">
+                <tr>
+                  <th style="width: 10%">#</th>
+                  <th style="width: 70%">Title</th>
+                  <th style="width: 20%" class="text-center">View PDF</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td><strong>VOLUME 1 (JULY 2019)</strong></td>
+                  <td class="text-center">
+                    <a
+                      href="https://drive.google.com/file/d/1HcMuLIhQq-bl2dGtxX7rNU0Wxxy3FTe1/view"
+                      target="_blank"
+                      class="btn btn-sm btn-danger"
+                      data-bs-toggle="tooltip"
+                      title="JUL 2019"
+                    >
+                      <i class="fas fa-file-pdf"></i> View PDF
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td><strong>VOLUME 2 (JANUARY 2020)</strong></td>
+                  <td class="text-center">
+                    <a
+                      href="https://drive.google.com/file/d/1QCj6m23CZZwPz44UDJt5yZMCO46pmj6O/view"
+                      target="_blank"
+                      class="btn btn-sm btn-danger"
+                      data-bs-toggle="tooltip"
+                      title="JAN 2020"
+                    >
+                      <i class="fas fa-file-pdf"></i> View PDF
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>
+                    <strong>BROADCAST - VOLUME 3 (JUNE 2020)</strong>
+                  </td>
+                  <td class="text-center">
+                    <a
+                      href="https://drive.google.com/file/d/1cV41EKFw0q8UMgr215wFevWiqlF4PW-u/view"
+                      target="_blank"
+                      class="btn btn-sm btn-danger"
+                      data-bs-toggle="tooltip"
+                      title="JUN 2020"
+                    >
+                      <i class="fas fa-file-pdf"></i> View PDF
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>4</td>
+                  <td><strong>BROADCAST - VOLUME 4 (JANUARY 2021)</strong></td>
+                  <td class="text-center">
+                    <a
+                      href="https://drive.google.com/file/d/1BD6ojVnmYWr_dMWUZIQIc_14EvUoaTLO/view"
+                      target="_blank"
+                      class="btn btn-sm btn-danger"
+                      data-bs-toggle="tooltip"
+                      title="JAN 2021"
+                    >
+                      <i class="fas fa-file-pdf"></i> View PDF
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>5</td>
+                  <td><strong>BROADCAST - VOLUME 5 (JULY 2021)</strong></td>
+                  <td class="text-center">
+                    <a
+                      href="https://drive.google.com/file/d/1pFvWXmBFiAl-owfTYWj0t0jFNcFfO7Mg/view"
+                      target="_blank"
+                      class="btn btn-sm btn-danger"
+                      data-bs-toggle="tooltip"
+                      title="JUL 2021"
+                    >
+                      <i class="fas fa-file-pdf"></i> View PDF
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>6</td>
+                  <td><strong>BROADCAST - VOLUME 6 (JANUARY 2022)</strong></td>
+                  <td class="text-center">
+                    <a
+                      href="https://drive.google.com/file/d/1dr9Rn69_6nockOPBDcKi6hJBWnsZ5W1i/view"
+                      target="_blank"
+                      class="btn btn-sm btn-danger"
+                      data-bs-toggle="tooltip"
+                      title="JAN 2022"
+                    >
+                      <i class="fas fa-file-pdf"></i> View PDF
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>7</td>
+                  <td><strong>BROADCAST - VOLUME 7 (JULY 2022)</strong></td>
+                  <td class="text-center">
+                    <a
+                      href="https://drive.google.com/file/d/1gwOHBglq9zFkHtNop9sB4O5v5ofOJHIg/view"
+                      target="_blank"
+                      class="btn btn-sm btn-danger"
+                      data-bs-toggle="tooltip"
+                      title="JUL 2022"
+                    >
+                      <i class="fas fa-file-pdf"></i> View PDF
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>8</td>
+                  <td><strong>BROADCAST - VOLUME 8 (JANUARY 2023)</strong></td>
+                  <td class="text-center">
+                    <a
+                      href="https://drive.google.com/file/d/1q7xt0_W8KHCfvgfb8UPmoZviW46VLLkP/view"
+                      target="_blank"
+                      class="btn btn-sm btn-danger"
+                      data-bs-toggle="tooltip"
+                      title="JAN 2023"
+                    >
+                      <i class="fas fa-file-pdf"></i> View PDF
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>9</td>
+                  <td><strong>BROADCAST - VOLUME 9 (JULY 2023)</strong></td>
+                  <td class="text-center">
+                    <a
+                      href="https://drive.google.com/file/d/1ip3BmwMb7QFUVbKJhMKKtydq2Mrjt-ys/view"
+                      target="_blank"
+                      class="btn btn-sm btn-danger"
+                      data-bs-toggle="tooltip"
+                      title="JUL 2023"
+                    >
+                      <i class="fas fa-file-pdf"></i> View PDF
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>10</td>
+                  <td><strong>BROADCAST - VOLUME 10 (JANUARY 2024)</strong></td>
+                  <td class="text-center">
+                    <a
+                      href="https://drive.google.com/file/d/1bwa9L8x2YXLSaPzAiz2mrvOzlS2GIvsD/view"
+                      target="_blank"
+                      class="btn btn-sm btn-danger"
+                      data-bs-toggle="tooltip"
+                      title="JAN 2024"
+                    >
+                      <i class="fas fa-file-pdf"></i> View PDF
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>11</td>
+                  <td>
+                    <strong>BROADCAST - VOLUME 11 (JULY 2024)</strong>
+                  </td>
+                  <td class="text-center">
+                    <a
+                      href="https://drive.google.com/file/d/1cHK8GD_qBVwwrohwYJUBEG21riL5pGM8/view"
+                      target="_blank"
+                      class="btn btn-sm btn-danger"
+                      data-bs-toggle="tooltip"
+                      title="JUL 2024"
+                    >
+                      <i class="fas fa-file-pdf"></i> View PDF
+                    </a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4 mt-5">
+      <div class="container">
+        <div class="text-center">
+          <p class="mb-0 small">
+            &copy; 2025 MIT License | Designed & Developed by
+            <a
+              href="#"
+              class="text-warning"
+              data-bs-toggle="modal"
+              data-bs-target="#developerModal"
+            >
+              Shivam M. Pandya
+            </a>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Developer Modal -->
+    <div class="modal fade" id="developerModal" tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header bg-primary text-white">
+            <h5 class="modal-title">
+              <i class="fas fa-user-tie"></i> Developer Information
+            </h5>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+          <div class="modal-body text-center">
+            <div class="mb-3">
+              <img
+                src="../assets/images/Shivam_Pandya.png"
+                alt="Developer"
+                class="img-fluid rounded-circle border border-3 border-primary"
+                style="max-width: 200px"
+              />
+            </div>
+            <h4 class="text-primary">Thanks For Visiting!</h4>
+            <h5 class="mt-3">Shivam M. Pandya</h5>
+            <p class="text-muted">[246090307077]</p>
+            <p class="mb-0">
+              Student, Diploma in Computer Engineering Department
+            </p>
+            <p class="text-muted">
+              C. U Shah Govt. Polytechnic - Surendranagar
+            </p>
+            <div class="mt-3">
+              <span class="badge bg-success me-1">HTML</span>
+              <span class="badge bg-info me-1">CSS</span>
+              <span class="badge bg-warning me-1">JavaScript</span>
+              <span class="badge bg-primary me-1">Bootstrap</span>
+              <span class="badge bg-danger">jQuery</span>
+              <span class="badge bg-dark">Google Script</span>
+              <span class="badge bg-secondary">Google Sheets</span>
+            </div>
+            <div class="mt-3">
+              <a
+                href="https://shivampandya.framer.website"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn btn-outline-primary btn-sm"
+              >
+                <i class="fas fa-globe"></i> Visit Portfolio
+              </a>
+            </div>
+          </div>
+          <div class="modal-footer justify-content-center">
+            <p class="text-muted small mb-0">
+              <i class="fas fa-copyright"></i> 2025 MIT License | RWPD
+              Submission Website
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <button id="scrollTop" class="btn btn-primary rounded-circle">
+      <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="../assets/js/script.js"></script>
+  </body>
+</html>

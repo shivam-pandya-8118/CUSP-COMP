@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gallery - Computer Engineering</title>
+    <link
+      rel="shortcut icon"
+      href="../assets/images/FavIcon.svg"
+      type="image/x-icon"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="../index.html">
+          <i class="fas fa-graduation-cap"></i> CE Dept
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html"
+                ><i class="fas fa-home"></i> Home</a
+              >
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+              >
+                <i class="fas fa-user-graduate"></i> Student Corner
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="https://gtu.ac.in/syllabus/syllabus.aspx"
+                    target="_blank"
+                  >
+                    <i class="fas fa-book"></i> Syllabus</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="study-material.html">
+                    <i class="fas fa-file-alt"></i> Study Material</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="projects.html">
+                    <i class="fas fa-project-diagram"></i> Projects</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="ssip-activity.html">
+                    <i class="fas fa-lightbulb"></i> SSIP Activities</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="notice-board.html"
+                ><i class="fas fa-bullhorn"></i> E-Notice Board</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="faculty-profile.html"
+                ><i class="fas fa-chalkboard-teacher"></i> Faculty Profile</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="newsletter.html"
+                ><i class="fas fa-newspaper"></i> E-Newsletter</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="gallery.html"
+                ><i class="fas fa-images"></i> Gallery</a
+              >
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+              >
+                <i class="fas fa-comment-dots"></i> Feedback
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="feedback-student.html">
+                    <i class="fas fa-user-edit"></i> Student Feedback Form</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="feedback-course.html">
+                    <i class="fas fa-poll"></i> Course Exit Survey</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="feedback-program.html">
+                    <i class="fas fa-chart-line"></i> Program Exit Survey</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="https://docs.google.com/forms/d/e/1FAIpQLSe3RdRusA8OwbL_0vr_czWSHJMqL7JC14vapRi9b_g0xL2qkQ/viewform"
+                    target="_blank"
+                  >
+                    <i class="fas fa-user-plus"></i> Alumni Registration</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="coding-club.html"
+                ><i class="fas fa-code"></i> Coding Club</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html"
+                ><i class="fas fa-envelope"></i> Contact Us</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Page Header -->
+    <div class="hero-section text-center text-white py-5">
+      <div class="container">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb justify-content-center">
+            <li class="breadcrumb-item">
+              <a href="../index.html" class="text-white">Home</a>
+            </li>
+            <li class="breadcrumb-item active" aria-current="page">Gallery</li>
+          </ol>
+        </nav>
+        <h1 class="display-4"><i class="fas fa-images"></i> Photo Gallery</h1>
+        <p class="lead">Glimpses of our department activities and events</p>
+      </div>
+    </div>
+
+    <!-- Gallery Content -->
+    <div class="container my-5">
+      <!-- Filter Buttons -->
+      <div class="text-center mb-4">
+        <div class="btn-group" role="group">
+          <button
+            type="button"
+            class="btn btn-primary active"
+            data-filter="all"
+          >
+            <i class="fas fa-th"></i> All
+          </button>
+          <button
+            type="button"
+            class="btn btn-outline-primary"
+            data-filter="lab"
+          >
+            <i class="fas fa-laptop"></i> Labs
+          </button>
+          <button
+            type="button"
+            class="btn btn-outline-primary"
+            data-filter="events"
+          >
+            <i class="fas fa-calendar-days"></i> Events
+          </button>
+          <button
+            type="button"
+            class="btn btn-outline-primary"
+            data-filter="visits"
+          >
+            <i class="fas fa-chalkboard-user"></i> Visits
+          </button>
+          <button
+            type="button"
+            class="btn btn-outline-primary"
+            data-filter="service"
+          >
+            <i class="fas fa-hand-holding-heart"></i> Service
+          </button>
+          <button
+            type="button"
+            class="btn btn-outline-primary"
+            data-filter="students"
+          >
+            <i class="fas fa-user-graduate"></i> Students
+          </button>
+        </div>
+      </div>
+
+      <!-- Bento Grid Gallery -->
+      <div class="bento-grid">
+        <!-- Image 1 -->
+        <div
+          class="bento-item"
+          data-category="lab"
+          onhvr="ADVANCE PROGRAMMING LAB - 1"
+        >
+          <img src="../assets/images/gallery/1.jpg" alt="Gallery Image 1" />
+          <div class="bento-overlay">
+            <p>ADVANCE PROGRAMMING LAB - 1</p>
+          </div>
+        </div>
+
+        <!-- Image 2 -->
+        <div
+          class="bento-item"
+          data-category="lab"
+          onhvr="ADVANCE PROGRAMMING LAB - 2"
+        >
+          <img src="../assets/images/gallery/2.jpg" alt="Gallery Image 2" />
+          <div class="bento-overlay">
+            <p>ADVANCE PROGRAMMING LAB - 2</p>
+          </div>
+        </div>
+
+        <!-- Image 3 -->
+        <div
+          class="bento-item"
+          data-category="lab"
+          onhvr="BASIC PROGRAMMING LAB - 1"
+        >
+          <img src="../assets/images/gallery/3.jpg" alt="Gallery Image 3" />
+          <div class="bento-overlay">
+            <p>BASIC PROGRAMMING LAB - 1</p>
+          </div>
+        </div>
+
+        <!-- Image 4 -->
+        <div
+          class="bento-item"
+          data-category="lab"
+          onhvr="BASIC PROGRAMMING LAB - 2"
+        >
+          <img src="../assets/images/gallery/4.jpg" alt="Gallery Image 4" />
+          <div class="bento-overlay">
+            <p>BASIC PROGRAMMING LAB - 2</p>
+          </div>
+        </div>
+
+        <!-- Image 5 -->
+        <div
+          class="bento-item"
+          data-category="lab"
+          onhvr="DIGITAL ELECTRONICS LAB / MICROPROCESSOR LAB"
+        >
+          <img src="../assets/images/gallery/5.jpg" alt="Gallery Image 5" />
+          <div class="bento-overlay">
+            <p>DIGITAL ELECTRONICS LAB / MICROPROCESSOR LAB</p>
+          </div>
+        </div>
+
+        <!-- Image 6 -->
+        <div
+          class="bento-item"
+          data-category="lab"
+          onhvr="COMPUTER MAINTENANCE / NETWORKING LAB"
+        >
+          <img src="../assets/images/gallery/6.jpg" alt="Gallery Image 6" />
+          <div class="bento-overlay">
+            <p>COMPUTER MAINTENANCE / NETWORKING LAB</p>
+          </div>
+        </div>
+
+        <!-- Image 7 -->
+        <div class="bento-item" data-category="visits" onhvr="Expert Lecture">
+          <img src="../assets/images/gallery/7.jpg" alt="Gallery Image 7" />
+          <div class="bento-overlay">
+            <p>Expert Lecture</p>
+          </div>
+        </div>
+
+        <!-- Image 8 -->
+        <div class="bento-item" data-category="visits" onhvr="Webinar">
+          <img src="../assets/images/gallery/8.jpg" alt="Gallery Image 8" />
+          <div class="bento-overlay">
+            <p>Webinar</p>
+          </div>
+        </div>
+
+        <!-- Image 9 -->
+        <div class="bento-item" data-category="visits" onhvr="Industrial Visit">
+          <img src="../assets/images/gallery/9.jpg" alt="Gallery Image 9" />
+          <div class="bento-overlay">
+            <p>Industrial Visit</p>
+          </div>
+        </div>
+
+        <!-- Image 10 -->
+        <div
+          class="bento-item"
+          data-category="events"
+          onhvr="Orientation program"
+        >
+          <img src="../assets/images/gallery/10.jpg" alt="Gallery Image 10" />
+          <div class="bento-overlay">
+            <p>Orientation Program</p>
+          </div>
+        </div>
+
+        <!-- Image 11 -->
+        <div
+          class="bento-item"
+          data-category="events"
+          onhvr="Tablet Distribution"
+        >
+          <img src="../assets/images/gallery/11.jpg" alt="Gallery Image 11" />
+          <div class="bento-overlay">
+            <p>Tablet Distribution</p>
+          </div>
+        </div>
+
+        <!-- Image 12 -->
+        <div class="bento-item" data-category="events" onhvr="Teacher's Day">
+          <img src="../assets/images/gallery/12.jpg" alt="Gallery Image 12" />
+          <div class="bento-overlay">
+            <p>Teacher's Day</p>
+          </div>
+        </div>
+
+        <!-- Image 13 -->
+        <div
+          class="bento-item"
+          data-category="lab"
+          onhvr="Project Presentation"
+        >
+          <img src="../assets/images/gallery/13.jpg" alt="Gallery Image 13" />
+          <div class="bento-overlay">
+            <p>Project Presentation</p>
+          </div>
+        </div>
+
+        <!-- Image 14 -->
+        <div class="bento-item" data-category="events" onhvr="Project Expo">
+          <img src="../assets/images/gallery/14.jpg" alt="Gallery Image 14" />
+          <div class="bento-overlay">
+            <p>Project Expo</p>
+          </div>
+        </div>
+
+        <!-- Image 15 -->
+        <div class="bento-item" data-category="service" onhvr="Tree Plantation">
+          <img src="../assets/images/gallery/15.jpg" alt="Gallery Image 15" />
+          <div class="bento-overlay">
+            <p>Tree Plantation</p>
+          </div>
+        </div>
+
+        <!-- Image 16 -->
+        <div
+          class="bento-item"
+          data-category="students"
+          onhvr="Student Achievement"
+        >
+          <img src="../assets/images/gallery/16.jpg" alt="Gallery Image 16" />
+          <div class="bento-overlay">
+            <p>Student Achievement</p>
+          </div>
+        </div>
+
+        <!-- Image 17 -->
+        <div
+          class="bento-item"
+          data-category="lab"
+          onhvr="Finishing School Program"
+        >
+          <img src="../assets/images/gallery/17.jpg" alt="Gallery Image 17" />
+          <div class="bento-overlay">
+            <p>Finishing School Program</p>
+          </div>
+        </div>
+
+        <!-- Image 18 -->
+        <div
+          class="bento-item"
+          data-category="events"
+          onhvr="Yoga Day Celebration"
+        >
+          <img src="../assets/images/gallery/18.jpg" alt="Gallery Image 18" />
+          <div class="bento-overlay">
+            <p>Yoga Day Celebration</p>
+          </div>
+        </div>
+
+        <!-- Image 19 -->
+        <div
+          class="bento-item"
+          data-category="events"
+          onhvr="Sports Day Celebration"
+        >
+          <img src="../assets/images/gallery/19.jpg" alt="Gallery Image 19" />
+          <div class="bento-overlay">
+            <p>Sports Day Celebration</p>
+          </div>
+        </div>
+
+        <!-- Image 20 -->
+        <div class="bento-item" data-category="service" onhvr="Social Activity">
+          <img src="../assets/images/gallery/20.jpg" alt="Gallery Image 20" />
+          <div class="bento-overlay">
+            <p>Social Activity</p>
+          </div>
+        </div>
+
+        <!-- Image 21 -->
+        <div
+          class="bento-item"
+          data-category="service"
+          onhvr="Blood Donation Camp"
+        >
+          <img src="../assets/images/gallery/21.jpg" alt="Gallery Image 21" />
+          <div class="bento-overlay">
+            <p>Blood Donation Camp</p>
+          </div>
+        </div>
+
+        <!-- Image 22 -->
+        <div
+          class="bento-item"
+          data-category="students"
+          onhvr="Parents Meeting"
+        >
+          <img src="../assets/images/gallery/22.jpg" alt="Gallery Image 22" />
+          <div class="bento-overlay">
+            <p>Parents Meeting</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4 mt-5">
+      <div class="container">
+        <div class="text-center">
+          <p class="mb-0 small">
+            &copy; 2025 MIT License | Designed & Developed by
+            <a
+              href="#"
+              class="text-warning"
+              data-bs-toggle="modal"
+              data-bs-target="#developerModal"
+            >
+              Shivam M. Pandya
+            </a>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Developer Modal -->
+    <div class="modal fade" id="developerModal" tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header bg-primary text-white">
+            <h5 class="modal-title">
+              <i class="fas fa-user-tie"></i> Developer Information
+            </h5>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+          <div class="modal-body text-center">
+            <div class="mb-3">
+              <img
+                src="../assets/images/Shivam_Pandya.png"
+                alt="Developer"
+                class="img-fluid rounded-circle border border-3 border-primary"
+                style="max-width: 200px"
+              />
+            </div>
+            <h4 class="text-primary">Thanks For Visiting!</h4>
+            <h5 class="mt-3">Shivam M. Pandya</h5>
+            <p class="text-muted">[246090307077]</p>
+            <p class="mb-0">
+              Student, Diploma in Computer Engineering Department
+            </p>
+            <p class="text-muted">
+              C. U Shah Govt. Polytechnic - Surendranagar
+            </p>
+            <div class="mt-3">
+              <span class="badge bg-success me-1">HTML</span>
+              <span class="badge bg-info me-1">CSS</span>
+              <span class="badge bg-warning me-1">JavaScript</span>
+              <span class="badge bg-primary me-1">Bootstrap</span>
+              <span class="badge bg-danger">jQuery</span>
+              <span class="badge bg-dark">Google Script</span>
+              <span class="badge bg-secondary">Google Sheets</span>
+            </div>
+            <div class="mt-3">
+              <a
+                href="https://shivampandya.framer.website"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn btn-outline-primary btn-sm"
+              >
+                <i class="fas fa-globe"></i> Visit Portfolio
+              </a>
+            </div>
+          </div>
+          <div class="modal-footer justify-content-center">
+            <p class="text-muted small mb-0">
+              <i class="fas fa-copyright"></i> 2025 MIT License | RWPD
+              Submission Website
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <button id="scrollTop" class="btn btn-primary rounded-circle">
+      <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="../assets/js/script.js"></script>
+    <script>
+      // Gallery Filter
+      $(document).ready(function () {
+        $("[data-filter]").on("click", function () {
+          const filter = $(this).data("filter");
+
+          // Update active button
+          $("[data-filter]")
+            .removeClass("active btn-primary")
+            .addClass("btn-outline-primary");
+          $(this)
+            .addClass("active btn-primary")
+            .removeClass("btn-outline-primary");
+
+          // Filter items
+          if (filter === "all") {
+            $(".bento-item").fadeIn();
+          } else {
+            $(".bento-item").hide();
+            $(`.bento-item[data-category="${filter}"]`).fadeIn();
+          }
+        });
+      });
+    </script>
+  </body>
+</html>

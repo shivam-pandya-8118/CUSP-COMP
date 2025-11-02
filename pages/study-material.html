@@ -1,0 +1,890 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Study Material - Computer Engineering</title>
+    <link
+      rel="shortcut icon"
+      href="../assets/images/FavIcon.svg"
+      type="image/x-icon"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+  </head>
+  <body>
+    <!-- Navbar (Same as ../index.html) -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="../index.html">
+          <i class="fas fa-graduation-cap"></i> CE Dept
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html"
+                ><i class="fas fa-home"></i> Home</a
+              >
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle active"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+              >
+                <i class="fas fa-user-graduate"></i> Student Corner
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="https://gtu.ac.in/syllabus/syllabus.aspx"
+                    target="_blank"
+                  >
+                    <i class="fas fa-book"></i> Syllabus</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item active" href="study-material.html">
+                    <i class="fas fa-file-alt"></i> Study Material</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="projects.html">
+                    <i class="fas fa-project-diagram"></i> Projects</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="ssip-activity.html">
+                    <i class="fas fa-lightbulb"></i> SSIP Activities</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="notice-board.html"
+                ><i class="fas fa-bullhorn"></i> E-Notice Board</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="faculty-profile.html"
+                ><i class="fas fa-chalkboard-teacher"></i> Faculty Profile</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="newsletter.html"
+                ><i class="fas fa-newspaper"></i> E-Newsletter</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="gallery.html"
+                ><i class="fas fa-images"></i> Gallery</a
+              >
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+              >
+                <i class="fas fa-comment-dots"></i> Feedback
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="feedback-student.html">
+                    <i class="fas fa-user-edit"></i> Student Feedback Form</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="feedback-course.html">
+                    <i class="fas fa-poll"></i> Course Exit Survey</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="feedback-program.html">
+                    <i class="fas fa-chart-line"></i> Program Exit Survey</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="https://docs.google.com/forms/d/e/1FAIpQLSe3RdRusA8OwbL_0vr_czWSHJMqL7JC14vapRi9b_g0xL2qkQ/viewform"
+                    target="_blank"
+                  >
+                    <i class="fas fa-user-plus"></i> Alumni Registration</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="coding-club.html"
+                ><i class="fas fa-code"></i> Coding Club</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html"
+                ><i class="fas fa-envelope"></i> Contact Us</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Page Header -->
+    <div class="hero-section text-center text-white py-5">
+      <div class="container">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb justify-content-center">
+            <li class="breadcrumb-item">
+              <a href="../index.html" class="text-white">Home</a>
+            </li>
+            <li class="breadcrumb-item">
+              <a href="#" class="text-white">Student Corner</a>
+            </li>
+            <li class="breadcrumb-item active" aria-current="page">
+              Study Material
+            </li>
+          </ol>
+        </nav>
+        <h1 class="display-4">
+          <i class="fas fa-file-alt"></i> Study Material
+        </h1>
+        <p class="lead">
+          Access comprehensive study resources and learning materials
+        </p>
+      </div>
+    </div>
+
+    <!-- Study Material Content -->
+    <div class="container my-5">
+      <div class="row g-4">
+        <!-- Document Resources Card -->
+        <div class="col-lg-6">
+          <div class="card h-100 shadow hover-lift">
+            <div class="card-header bg-primary text-white">
+              <h4 class="mb-0">
+                <i class="fas fa-file-pdf"></i> Document Resources
+              </h4>
+            </div>
+            <div class="card-body">
+              <p class="text-muted">
+                Access PDF notes, presentations, assignments, and other study
+                documents
+              </p>
+
+              <!-- Tabs for Semesters -->
+              <ul class="nav nav-tabs" id="documentTabs" role="tablist">
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link active"
+                    id="sem1-tab"
+                    data-bs-toggle="tab"
+                    data-bs-target="#sem1"
+                    type="button"
+                  >
+                    Sem 1
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link"
+                    id="sem2-tab"
+                    data-bs-toggle="tab"
+                    data-bs-target="#sem2"
+                    type="button"
+                  >
+                    Sem 2
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link"
+                    id="sem3-tab"
+                    data-bs-toggle="tab"
+                    data-bs-target="#sem3"
+                    type="button"
+                  >
+                    Sem 3
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link"
+                    id="sem4-tab"
+                    data-bs-toggle="tab"
+                    data-bs-target="#sem4"
+                    type="button"
+                  >
+                    Sem 4
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link"
+                    id="sem5-tab"
+                    data-bs-toggle="tab"
+                    data-bs-target="#sem5"
+                    type="button"
+                  >
+                    Sem 5
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link"
+                    id="sem6-tab"
+                    data-bs-toggle="tab"
+                    data-bs-target="#sem6"
+                    type="button"
+                  >
+                    Sem 6
+                  </button>
+                </li>
+              </ul>
+
+              <div class="tab-content mt-3" id="documentTabContent">
+                <!-- Semester 1 -->
+                <div
+                  class="tab-pane fade show active"
+                  id="sem1"
+                  role="tabpanel"
+                >
+                  <div class="list-group">
+                    <a
+                      href="https://drive.google.com/drive/folders/1RUK_71xw8ru2wIQhC7EZjliteeFoQW5r"
+                      target="_blank"
+                      class="list-group-item list-group-item-action"
+                    >
+                      <div
+                        class="d-flex w-100 justify-content-between align-items-center"
+                      >
+                        <div>
+                          <i class="fas fa-database text-danger"></i>
+                          <strong class="ms-2">Semester 1 Question Bank</strong>
+                        </div>
+                        <span class="badge bg-primary rounded-pill">
+                          <i class="fas fa-eye"></i> VIEW
+                        </span>
+                      </div>
+                    </a>
+                    <a
+                      href="https://drive.google.com/drive/folders/1XA_VXrmCMlz3DDLNHtxcgpG6wz3QSrxk"
+                      target="_blank"
+                      class="list-group-item list-group-item-action"
+                    >
+                      <div
+                        class="d-flex w-100 justify-content-between align-items-center"
+                      >
+                        <div>
+                          <i class="fas fa-book-open text-warning"></i>
+                          <strong class="ms-2">Semester 1 Class Notes</strong>
+                        </div>
+                        <span class="badge bg-primary rounded-pill">
+                          <i class="fas fa-eye"></i> VIEW
+                        </span>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+
+                <!-- Semester 2 -->
+                <div class="tab-pane fade" id="sem2" role="tabpanel">
+                  <div class="list-group">
+                    <a
+                      href="https://drive.google.com/drive/folders/1y9obPLjr9rJHPtGuk5w1tHLhr4hHETUp"
+                      target="_blank"
+                      class="list-group-item list-group-item-action"
+                    >
+                      <div
+                        class="d-flex w-100 justify-content-between align-items-center"
+                      >
+                        <div>
+                          <i class="fas fa-database text-danger"></i>
+                          <strong class="ms-2">Semester 2 Question Bank</strong>
+                        </div>
+                        <span class="badge bg-primary rounded-pill">
+                          <i class="fas fa-eye"></i> VIEW
+                        </span>
+                      </div>
+                    </a>
+                    <a
+                      href="https://drive.google.com/drive/folders/1PX4NxzBwfGOdbIabXchrrT_AqenWhm9C"
+                      target="_blank"
+                      class="list-group-item list-group-item-action"
+                    >
+                      <div
+                        class="d-flex w-100 justify-content-between align-items-center"
+                      >
+                        <div>
+                          <i class="fas fa-book-open text-warning"></i>
+                          <strong class="ms-2">Semester 2 Class Notes</strong>
+                        </div>
+                        <span class="badge bg-primary rounded-pill">
+                          <i class="fas fa-eye"></i> VIEW
+                        </span>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+
+                <!-- Semester 3 -->
+                <div class="tab-pane fade" id="sem3" role="tabpanel">
+                  <div class="list-group">
+                    <a
+                      href="https://drive.google.com/drive/folders/1wEZp2VeWiAA6FCVX4XA5AypQMPqacQoe"
+                      target="_blank"
+                      class="list-group-item list-group-item-action"
+                    >
+                      <div
+                        class="d-flex w-100 justify-content-between align-items-center"
+                      >
+                        <div>
+                          <i class="fas fa-database text-danger"></i>
+                          <strong class="ms-2">Semester 3 Question Bank</strong>
+                        </div>
+                        <span class="badge bg-primary rounded-pill">
+                          <i class="fas fa-eye"></i> VIEW
+                        </span>
+                      </div>
+                    </a>
+                    <a
+                      href="https://drive.google.com/drive/folders/1u5JNmp1cdSpG355OdMxY3dyZSXuEfj4A"
+                      target="_blank"
+                      class="list-group-item list-group-item-action"
+                    >
+                      <div
+                        class="d-flex w-100 justify-content-between align-items-center"
+                      >
+                        <div>
+                          <i class="fas fa-book-open text-warning"></i>
+                          <strong class="ms-2">Semester 3 Class Notes</strong>
+                        </div>
+                        <span class="badge bg-primary rounded-pill">
+                          <i class="fas fa-eye"></i> VIEW
+                        </span>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+
+                <!-- Semester 4 -->
+                <div class="tab-pane fade" id="sem4" role="tabpanel">
+                  <div class="list-group">
+                    <a
+                      href="https://drive.google.com/drive/folders/18MgCIvn77aux0a7j080tfxTB9myokxBv"
+                      target="_blank"
+                      class="list-group-item list-group-item-action"
+                    >
+                      <div
+                        class="d-flex w-100 justify-content-between align-items-center"
+                      >
+                        <div>
+                          <i class="fas fa-database text-danger"></i>
+                          <strong class="ms-2">Semester 4 Question Bank</strong>
+                        </div>
+                        <span class="badge bg-primary rounded-pill">
+                          <i class="fas fa-eye"></i> VIEW
+                        </span>
+                      </div>
+                    </a>
+                    <a
+                      href="https://drive.google.com/drive/folders/1MlSCRC1HZ_K7im5fQ1-_eM_TXl_zCjiN"
+                      target="_blank"
+                      class="list-group-item list-group-item-action"
+                    >
+                      <div
+                        class="d-flex w-100 justify-content-between align-items-center"
+                      >
+                        <div>
+                          <i class="fas fa-book-open text-warning"></i>
+                          <strong class="ms-2">Semester 4 Class Notes</strong>
+                        </div>
+                        <span class="badge bg-primary rounded-pill">
+                          <i class="fas fa-eye"></i> VIEW
+                        </span>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+
+                <!-- Semester 5 -->
+                <div class="tab-pane fade" id="sem5" role="tabpanel">
+                  <div class="list-group">
+                    <a
+                      href="https://drive.google.com/drive/folders/1dSbt1QOit903xuFtjr7tO2DQvqyBGcEA"
+                      target="_blank"
+                      class="list-group-item list-group-item-action"
+                    >
+                      <div
+                        class="d-flex w-100 justify-content-between align-items-center"
+                      >
+                        <div>
+                          <i class="fas fa-database text-danger"></i>
+                          <strong class="ms-2">Semester 5 Question Bank</strong>
+                        </div>
+                        <span class="badge bg-primary rounded-pill">
+                          <i class="fas fa-eye"></i> VIEW
+                        </span>
+                      </div>
+                    </a>
+                    <a
+                      href="https://drive.google.com/drive/folders/1tRBipXutXRKLSYmfbl7_SVul7S4Ed_YY"
+                      target="_blank"
+                      class="list-group-item list-group-item-action"
+                    >
+                      <div
+                        class="d-flex w-100 justify-content-between align-items-center"
+                      >
+                        <div>
+                          <i class="fas fa-book-open text-warning"></i>
+                          <strong class="ms-2">Semester 5 Class Notes</strong>
+                        </div>
+                        <span class="badge bg-primary rounded-pill">
+                          <i class="fas fa-eye"></i> VIEW
+                        </span>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+
+                <!-- Semester 6 -->
+                <div class="tab-pane fade" id="sem6" role="tabpanel">
+                  <div class="list-group">
+                    <a
+                      href="https://drive.google.com/drive/folders/1_-y5fb7Grj8hS8k8Ra8_PdZBCBvbs4sO"
+                      target="_blank"
+                      class="list-group-item list-group-item-action"
+                    >
+                      <div
+                        class="d-flex w-100 justify-content-between align-items-center"
+                      >
+                        <div>
+                          <i class="fas fa-database text-danger"></i>
+                          <strong class="ms-2">Semester 6 Question Bank</strong>
+                        </div>
+                        <span class="badge bg-primary rounded-pill">
+                          <i class="fas fa-eye"></i> VIEW
+                        </span>
+                      </div>
+                    </a>
+                    <a
+                      href="https://drive.google.com/drive/folders/1AhSyJX_Ut1YeHgXKQup7Eox9bIIW0y5A"
+                      target="_blank"
+                      class="list-group-item list-group-item-action"
+                    >
+                      <div
+                        class="d-flex w-100 justify-content-between align-items-center"
+                      >
+                        <div>
+                          <i class="fas fa-book-open text-warning"></i>
+                          <strong class="ms-2">Semester 6 Class Notes</strong>
+                        </div>
+                        <span class="badge bg-primary rounded-pill">
+                          <i class="fas fa-eye"></i> VIEW
+                        </span>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Video Resources Card -->
+        <div class="col-lg-6">
+          <div class="card h-100 shadow hover-lift">
+            <div class="card-header bg-danger text-white">
+              <h4 class="mb-0">
+                <i class="fab fa-youtube"></i> YouTube Video Playlists
+              </h4>
+            </div>
+            <div class="card-body">
+              <p class="text-muted">
+                Watch video lectures and tutorials from YouTube playlists
+              </p>
+
+              <!-- Video Playlist List -->
+              <div class="list-group">
+                <!-- Single Video Card -->
+                <div class="list-group-item p-3">
+                  <div class="row g-3">
+                    <!-- Thumbnail Column -->
+                    <div class="col-12 col-sm-3">
+                      <div class="position-relative">
+                        <img
+                          src="https://img.youtube.com/vi/E_wdRJnrmSw/maxresdefault.jpg"
+                          alt="Video Thumbnail"
+                          class="img-fluid rounded w-100"
+                          style="aspect-ratio: 16/9; object-fit: cover"
+                        />
+                      </div>
+                    </div>
+
+                    <!-- Content Column -->
+                    <div class="col-12 col-sm-9">
+                      <!-- Title -->
+                      <h6 class="mb-2">
+                        <i class="fab fa-youtube text-danger"></i>
+                        Data Structure and Algorithms (DSA)
+                      </h6>
+
+                      <!-- Course Details -->
+                      <div class="small text-muted mb-2">
+                        <i class="fas fa-chalkboard-teacher"></i> By Prof.
+                        Sanjay R. Bhalgama
+                        <span class="mx-2">•</span>
+                        <i class="fas fa-video"></i> 26 Lectures
+                      </div>
+
+                      <!-- Watch Button -->
+                      <a
+                        href="https://youtube.com/playlist?list=PLs8uN-L_sxTXuWA-6wT1IIHYE7-qdflDT"
+                        target="_blank"
+                        class="btn btn-danger btn-sm w-100 mt-2"
+                      >
+                        <i class="fas fa-play me-1"></i> Watch Playlist
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Single Video Card -->
+                <div class="list-group-item p-3">
+                  <div class="row g-3">
+                    <!-- Thumbnail Column -->
+                    <div class="col-12 col-sm-3">
+                      <div class="position-relative">
+                        <img
+                          src="https://img.youtube.com/vi/0650fpuli7E/maxresdefault.jpg"
+                          alt="Video Thumbnail"
+                          class="img-fluid rounded w-100"
+                          style="aspect-ratio: 16/9; object-fit: cover"
+                        />
+                      </div>
+                    </div>
+
+                    <!-- Content Column -->
+                    <div class="col-12 col-sm-9">
+                      <!-- Title -->
+                      <h6 class="mb-2">
+                        <i class="fab fa-youtube text-danger"></i>
+                        Computer Organization & Architecture (COA)
+                      </h6>
+
+                      <!-- Course Details -->
+                      <div class="small text-muted mb-2">
+                        <i class="fas fa-chalkboard-teacher"></i> By Prof.
+                        Sanjay R. Bhalgama
+                        <span class="mx-2">•</span>
+                        <i class="fas fa-video"></i> 06 Lectures
+                      </div>
+
+                      <!-- Watch Button -->
+                      <a
+                        href="https://youtube.com/playlist?list=PLs8uN-L_sxTX2jbgfoPhCoxttaA5rmMwL"
+                        target="_blank"
+                        class="btn btn-danger btn-sm w-100 mt-2"
+                      >
+                        <i class="fas fa-play me-1"></i> Watch Playlist
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Single Video Card -->
+                <div class="list-group-item p-3">
+                  <div class="row g-3">
+                    <!-- Thumbnail Column -->
+                    <div class="col-12 col-sm-3">
+                      <div class="position-relative">
+                        <img
+                          src="https://img.youtube.com/vi/1KzcqlS6bqI/maxresdefault.jpg"
+                          alt="Video Thumbnail"
+                          class="img-fluid rounded w-100"
+                          style="aspect-ratio: 16/9; object-fit: cover"
+                        />
+                      </div>
+                    </div>
+
+                    <!-- Content Column -->
+                    <div class="col-12 col-sm-9">
+                      <!-- Title -->
+                      <h6 class="mb-2">
+                        <i class="fab fa-youtube text-danger"></i>
+                        Dynamic Webpage Development (DWPD)
+                      </h6>
+
+                      <!-- Course Details -->
+                      <div class="small text-muted mb-2">
+                        <i class="fas fa-chalkboard-teacher"></i> By Prof.
+                        Pratiksinh B. Parmar
+                        <span class="mx-2">•</span>
+                        <i class="fas fa-video"></i> 35 Lectures
+                      </div>
+
+                      <!-- Watch Button -->
+                      <a
+                        href="https://youtube.com/playlist?list=PL4eWbwVCZbnCH1BWFFpI6lUHr3TPnYzr0"
+                        target="_blank"
+                        class="btn btn-danger btn-sm w-100 mt-2"
+                      >
+                        <i class="fas fa-play me-1"></i> Watch Playlist
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Single Video Card -->
+                <div class="list-group-item p-3">
+                  <div class="row g-3">
+                    <!-- Thumbnail Column -->
+                    <div class="col-12 col-sm-3">
+                      <div class="position-relative">
+                        <img
+                          src="https://img.youtube.com/vi/TbffoDeh044/maxresdefault.jpg"
+                          alt="Video Thumbnail"
+                          class="img-fluid rounded w-100"
+                          style="aspect-ratio: 16/9; object-fit: cover"
+                        />
+                      </div>
+                    </div>
+
+                    <!-- Content Column -->
+                    <div class="col-12 col-sm-9">
+                      <!-- Title -->
+                      <h6 class="mb-2">
+                        <i class="fab fa-youtube text-danger"></i>
+                        Java Programming
+                      </h6>
+
+                      <!-- Course Details -->
+                      <div class="small text-muted mb-2">
+                        <i class="fas fa-chalkboard-teacher"></i> By Prof.
+                        Shaktisinh S.Parmar
+                        <span class="mx-2">•</span>
+                        <i class="fas fa-video"></i> 8 Lectures
+                      </div>
+
+                      <!-- Watch Button -->
+                      <a
+                        href="https://youtube.com/playlist?list=PLMlvQSsKGjAoxTPC3QfJ_99JpKhUrn-uw"
+                        target="_blank"
+                        class="btn btn-danger btn-sm w-100 mt-2"
+                      >
+                        <i class="fas fa-play me-1"></i> Watch Playlist
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Single Video Card -->
+                <div class="list-group-item p-3">
+                  <div class="row g-3">
+                    <!-- Thumbnail Column -->
+                    <div class="col-12 col-sm-3">
+                      <div class="position-relative">
+                        <img
+                          src="https://img.youtube.com/vi/ToxGUzUS-hU/maxresdefault.jpg"
+                          alt="Video Thumbnail"
+                          class="img-fluid rounded w-100"
+                          style="aspect-ratio: 16/9; object-fit: cover"
+                        />
+                      </div>
+                    </div>
+
+                    <!-- Content Column -->
+                    <div class="col-12 col-sm-9">
+                      <!-- Title -->
+                      <h6 class="mb-2">
+                        <i class="fab fa-youtube text-danger"></i>
+                        Database Management System (DBMS)
+                      </h6>
+
+                      <!-- Course Details -->
+                      <div class="small text-muted mb-2">
+                        <i class="fas fa-chalkboard-teacher"></i> By Prof.
+                        Ureshkumar N.Parmar
+                        <span class="mx-2">•</span>
+                        <i class="fas fa-video"></i> 54 Lectures
+                      </div>
+
+                      <!-- Watch Button -->
+                      <a
+                        href="https://youtube.com/playlist?list=PLCHbURt_7l3gBCPT9gV1giuDFx5g2KzmO"
+                        target="_blank"
+                        class="btn btn-danger btn-sm w-100 mt-2"
+                      >
+                        <i class="fas fa-play me-1"></i> Watch Playlist
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Single Video Card -->
+                <div class="list-group-item p-3">
+                  <div class="row g-3">
+                    <!-- Thumbnail Column -->
+                    <div class="col-12 col-sm-3">
+                      <div class="position-relative">
+                        <img
+                          src="https://img.youtube.com/vi/kd8QzXk7gNg/maxresdefault.jpg"
+                          alt="Video Thumbnail"
+                          class="img-fluid rounded w-100"
+                          style="aspect-ratio: 16/9; object-fit: cover"
+                        />
+                      </div>
+                    </div>
+
+                    <!-- Content Column -->
+                    <div class="col-12 col-sm-9">
+                      <!-- Title -->
+                      <h6 class="mb-2">
+                        <i class="fab fa-youtube text-danger"></i>
+                        Fundamentals of Software Development
+                      </h6>
+
+                      <!-- Course Details -->
+                      <div class="small text-muted mb-2">
+                        <i class="fas fa-chalkboard-teacher"></i> By Prof.
+                        Ureshkumar N.Parmar
+                        <span class="mx-2">•</span>
+                        <i class="fas fa-video"></i> 10 Lectures
+                      </div>
+
+                      <!-- Watch Button -->
+                      <a
+                        href="https://youtube.com/playlist?list=PLCHbURt_7l3heeKdHDEvWw09cuzur4NtQ"
+                        target="_blank"
+                        class="btn btn-danger btn-sm w-100 mt-2"
+                      >
+                        <i class="fas fa-play me-1"></i> Watch Playlist
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4 mt-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <h5>
+              <i class="fas fa-university"></i> C. U. Shah Govt. Polytechnic
+            </h5>
+            <p class="mb-0">Department of Computer Engineering</p>
+          </div>
+        </div>
+        <hr class="bg-light" />
+        <div class="text-center">
+          <p class="mb-0 small">
+            &copy; 2025 MIT License | Designed & Developed by
+            <a
+              href="#"
+              class="text-warning"
+              data-bs-toggle="modal"
+              data-bs-target="#developerModal"
+            >
+              Shivam M. Pandya
+            </a>
+          </p>
+          l
+        </div>
+      </div>
+    </footer>
+
+    <!-- Developer Modal -->
+    <div class="modal fade" id="developerModal" tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header bg-primary text-white">
+            <h5 class="modal-title">
+              <i class="fas fa-user-tie"></i> Developer Information
+            </h5>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+          <div class="modal-body text-center">
+            <div class="mb-3">
+              <img
+                src="../assets/images/Shivam_Pandya.png"
+                alt="Developer"
+                class="img-fluid rounded-circle border border-3 border-primary"
+                style="max-width: 200px"
+              />
+            </div>
+            <h4 class="text-primary">Thanks For Visiting!</h4>
+            <h5 class="mt-3">Shivam M. Pandya</h5>
+            <p class="text-muted">[246090307077]</p>
+            <p class="mb-0">
+              Student, Diploma in Computer Engineering Department
+            </p>
+            <p class="text-muted">
+              C. U Shah Govt. Polytechnic - Surendranagar
+            </p>
+            <div class="mt-3">
+              <span class="badge bg-success me-1">HTML</span>
+              <span class="badge bg-info me-1">CSS</span>
+              <span class="badge bg-warning me-1">JavaScript</span>
+              <span class="badge bg-primary me-1">Bootstrap</span>
+              <span class="badge bg-danger">jQuery</span>
+              <span class="badge bg-dark">Google Script</span>
+              <span class="badge bg-secondary">Google Sheets</span>
+            </div>
+            <div class="mt-3">
+              <a
+                href="https://shivampandya.framer.website"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn btn-outline-primary btn-sm"
+              >
+                <i class="fas fa-globe"></i> Visit Portfolio
+              </a>
+            </div>
+          </div>
+          <div class="modal-footer justify-content-center">
+            <p class="text-muted small mb-0">
+              <i class="fas fa-copyright"></i> 2025 MIT License | RWPD
+              Submission Website
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <button id="scrollTop" class="btn btn-primary rounded-circle">
+      <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="../assets/js/script.js"></script>
+  </body>
+</html>
