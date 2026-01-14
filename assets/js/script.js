@@ -354,10 +354,14 @@ $(document).ready(function () {
     "%cWelcome to C. U. Shah Govt. Polytechnic, Diploma in Computer Engineering Department Website! ",
     "background: #0d6efd; color: white; font-size: 30px; padding: 10px;"
   );
-  console.log(
-    "%c Developed by Shivam M. Pandya ",
-    "background: #198754; color: white; font-size: 15px; padding: 5px;"
-  );
+console.log(`
+____           ____  _     _                         ____                 _
+ __ ) _   _   / ___|| |__ (_)_   ____ _ _ __ ___    |  _ \\ __ _ _ __   __| |_   _  __ _
+  _ \\| | | |  \\___ \\| '_ \\| \\ \\ / / _\` | '_ \` _ \\   | |_) / _\` | '_ \\ / _\` | | | |/ _\` |
+ |_) | |_| |   ___) | | | | |\\ V / (_| | | | | | |  |  __/ (_| | | | | (_| | |_| | (_| |
+____/ \\__, |  |____/|_| |_|_| \\_/ \\__,_|_| |_| |_|  |_|   \\__,_|_| |_|\\__,_|\\__, |\\__,_|
+      |___/                                                                |___/
+`);
   console.log(
     "%c Last updated on 08 November 2025 ",
     "background: #871919ff; color: white; font-size: 15px; padding: 5px;"
@@ -372,3 +376,4 @@ if ("serviceWorker" in navigator) {
     //     .catch(err => console.log('SW registration failed'));
   });
 }
+
